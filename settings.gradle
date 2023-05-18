@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "ecommerce_app"
+include ':app'
+include ':feature-mainscreen'
+include ':core'
+include ':api-database'
+include ':feature-cartscreen'
+include ':feature-detailsscreen'
+include ':navigation'
+include ':feature-yandex'

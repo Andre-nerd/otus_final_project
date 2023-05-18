@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="@dimen/micro_padding"
+    android:layout_marginTop="@dimen/micro_padding"
+    android:layout_marginEnd="@dimen/micro_padding"
+    android:layout_marginBottom="@dimen/micro_padding"
+    android:background="@color/light_grey">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageTopSale"
+        android:layout_width="@dimen/best_seller_banner_width"
+        android:layout_height="@dimen/best_seller_banner_height"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/normal_corner_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bestSellerBanner"
+                android:layout_width="@dimen/best_seller_image_width"
+                android:layout_height="@dimen/best_seller_image_height"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/imageFavorite"
+                android:layout_width="@dimen/favorite_width"
+                android:layout_height="@dimen/favorite_height"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/medium_padding"
+                android:layout_marginTop="@dimen/padding_13"
+                android:layout_marginEnd="@dimen/end_medium_padding"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:elevation="@dimen/max_elevation"
+                android:src="@drawable/ic_empty_heart" />
+
+            <ImageView
+                android:id="@+id/imageCircle"
+                android:layout_width="@dimen/small_white_circle_size"
+                android:layout_height="@dimen/small_white_circle_size"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/mini_plus_padding"
+                android:layout_marginEnd="@dimen/end_normal_padding"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:background="@drawable/top_menu_circle"
+                android:elevation="@dimen/medium_elevation"
+                android:src="@drawable/top_menu_circle"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textDiscountPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/start_medium_padding"
+                android:layout_marginBottom="@dimen/padding_34"
+                android:fontFamily="@font/mark_pro_bold"
+                android:hint="@string/price_discount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_medium" />
+
+            <TextView
+                android:id="@+id/textNormalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textDiscountPrice"
+                android:layout_marginStart="@dimen/small_padding"
+                android:layout_toEndOf="@+id/textDiscountPrice"
+                android:fontFamily="@font/mark_pro_bold"
+                android:hint="@string/price_normal"
+                android:textColor="@color/light_grey"
+                android:textSize="@dimen/font_micro" />
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textDiscountPrice"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/max_padding"
+                android:layout_marginBottom="@dimen/padding_15"
+                android:fontFamily="@font/marc_pro_regular"
+                android:hint="@string/samsung_note_20_ultra"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_micro" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

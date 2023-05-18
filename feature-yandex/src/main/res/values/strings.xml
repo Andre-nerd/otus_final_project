@@ -1,0 +1,4 @@
+<resources>
+    <string name="need_permission">Need permission to locate</string>
+    <string name="find_me">Find me</string>
+</resources>
