@@ -91,7 +91,8 @@ dependencies {
     implementation "com.google.dagger:dagger:$daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
 
-    //Testing
+    //Robolectric
+    testImplementation 'org.robolectric:robolectric:4.9'
 
     // Optional -- UI testing with Espresso
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
