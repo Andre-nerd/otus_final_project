@@ -15,6 +15,7 @@ import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.mockito.Mockito
 import org.mockito.kotlin.mock
 import org.robolectric.RobolectricTestRunner
 
@@ -52,7 +53,7 @@ class MainScreenDatabaseUseCaseTest {
         runBlocking {
             val expected = hotSales
             useCase.saveHotSales(hotSales)
-            val actual = repository.getHotSalesFromDatabase()
+            val actual = useCase.getHotSalesList()
             Assert.assertEquals(expected,actual)
         }
     }
@@ -62,8 +63,28 @@ class MainScreenDatabaseUseCaseTest {
         runBlocking {
             val expected = bestSales
             useCase.saveBestSeller(bestSales)
-            val actual = repository.getBestSellerFromDatabase()
+            val actual = useCase.getBestSellerList()
             Assert.assertEquals(expected,actual)
+        }
+    }
+
+    @Test
+    fun `UseCase invoke method getHotSalesFromDatabase() class MainScreenRepositoryImpl `() {
+        runBlocking {
+            val mockRepository:MainScreenRepositoryImpl = mock()
+            val testUseCase = MainScreenDatabaseUseCase(mockRepository)
+            testUseCase.getHotSalesList()
+            Mockito.verify(mockRepository).getHotSalesFromDatabase()
+        }
+    }
+
+    @Test
+    fun `UseCase invoke method getBestSellerFromDatabase() class MainScreenRepositoryImpl `() {
+        runBlocking {
+            val mockRepository:MainScreenRepositoryImpl = mock()
+            val testUseCase = MainScreenDatabaseUseCase(mockRepository)
+            testUseCase.getBestSellerList()
+            Mockito.verify(mockRepository).getBestSellerFromDatabase()
         }
     }
 
