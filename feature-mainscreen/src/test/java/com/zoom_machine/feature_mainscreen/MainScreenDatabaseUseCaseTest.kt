@@ -88,6 +88,7 @@ class MainScreenDatabaseUseCaseTest {
         }
     }
 
+
     @After
     fun closeDb() {
         database.close()
