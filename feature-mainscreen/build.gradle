@@ -36,39 +36,32 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.appcompat:appcompat:1.4.2'
-    implementation 'com.google.android.material:material:1.6.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.0'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.5.0'
+
+    implementation androidxDepency.values()
+
+    implementation androidMaterialDepency
+
+    implementation viewModelFragmentDepency.values()
+
+    implementation liveDataDepency.values()
+
+    implementation navigationDepency.values()
+
     implementation project(":core")
     implementation project(':api-database')
     implementation project(path: ':navigation')
 
 
-//    // Coroutines
-//    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3'
-//    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.3'
-
-
-    //ViewModel
-    def lifecycleVersion = '2.5.0'
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0"
-    implementation "androidx.fragment:fragment-ktx:1.5.0"
-
     //LiveData
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
-    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
+
 
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.13.2'
     kapt "com.github.bumptech.glide:compiler:4.13.2"
 
-    //RecyclerView
+//    //RecyclerView
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
-    implementation 'com.hannesdorfmann:adapterdelegates4:4.3.0'
+
 
     //Moshi
     def moshiVersion = '1.13.0'

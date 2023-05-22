@@ -1,0 +1,50 @@
+ext{
+
+    androidxCore = "1.8.0"
+    androidxAppcompat = "1.4.2"
+    androidxConstraintlayout = "2.1.4"
+
+    androidMaterial = "1.6.1"
+
+    androidxCoreDepency = "androidx.core:core-ktx:$androidxCore"
+    androidxAppcompatDepency = "androidx.appcompat:appcompat:$androidxAppcompat"
+    androidxConstraintlayoutDepency = "androidx.constraintlayout:constraintlayout:$androidxConstraintlayout"
+
+    androidxDepency = [
+            core: "androidx.core:core-ktx:$androidxCore",
+            appCompat: "androidx.appcompat:appcompat:$androidxAppcompat",
+            constraintlayout: "androidx.constraintlayout:constraintlayout:$androidxConstraintlayout"
+    ]
+
+    androidMaterialDepency = "com.google.android.material:material:$androidMaterial"
+
+    //ViewModel & Fragment
+    lifecycleViewModel = "2.5.0"
+    fragmentKtxVersion = "1.5.0"
+
+    viewModelFragmentDepency = [
+            viewModel: "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleViewModel",
+            fragment: "androidx.fragment:fragment-ktx:$fragmentKtxVersion"
+    ]
+
+    //LiveData
+    lifecycleLivedata = "2.5.0"
+    lifecycleCommonJava8 = "2.5.0"
+    lifecycleRuntimeKtx = "2.5.0"
+
+    liveDataDepency = [
+            data: "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleLivedata",
+            commonJava8: "androidx.lifecycle:lifecycle-common-java8:$lifecycleCommonJava8",
+            runtimeKtx: "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleRuntimeKtx"
+    ]
+
+    //Navigation
+    navigationFragment = "2.5.0"
+    navigationUI = "2.5.0"
+
+    navigationDepency = [
+            fragment: "androidx.navigation:navigation-fragment-ktx:$navigationFragment",
+            ui: "androidx.navigation:navigation-ui-ktx:$navigationUI"
+    ]
+
+}
