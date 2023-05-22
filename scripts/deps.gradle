@@ -1,4 +1,4 @@
-ext{
+ext {
 
     androidxCore = "1.8.0"
     androidxAppcompat = "1.4.2"
@@ -11,8 +11,8 @@ ext{
     androidxConstraintlayoutDepency = "androidx.constraintlayout:constraintlayout:$androidxConstraintlayout"
 
     androidxDepency = [
-            core: "androidx.core:core-ktx:$androidxCore",
-            appCompat: "androidx.appcompat:appcompat:$androidxAppcompat",
+            core            : "androidx.core:core-ktx:$androidxCore",
+            appCompat       : "androidx.appcompat:appcompat:$androidxAppcompat",
             constraintlayout: "androidx.constraintlayout:constraintlayout:$androidxConstraintlayout"
     ]
 
@@ -24,7 +24,7 @@ ext{
 
     viewModelFragmentDepency = [
             viewModel: "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleViewModel",
-            fragment: "androidx.fragment:fragment-ktx:$fragmentKtxVersion"
+            fragment : "androidx.fragment:fragment-ktx:$fragmentKtxVersion"
     ]
 
     //LiveData
@@ -33,10 +33,14 @@ ext{
     lifecycleRuntimeKtx = "2.5.0"
 
     liveDataDepency = [
-            data: "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleLivedata",
+            data       : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleLivedata",
             commonJava8: "androidx.lifecycle:lifecycle-common-java8:$lifecycleCommonJava8",
-            runtimeKtx: "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleRuntimeKtx"
+            runtimeKtx : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleRuntimeKtx"
     ]
+
+    //RecyclerView
+    recyclerviewVersion = "1.2.1"
+    recyclerviewDepency = "androidx.recyclerview:recyclerview:$recyclerviewVersion"
 
     //Navigation
     navigationFragment = "2.5.0"
@@ -44,7 +48,35 @@ ext{
 
     navigationDepency = [
             fragment: "androidx.navigation:navigation-fragment-ktx:$navigationFragment",
-            ui: "androidx.navigation:navigation-ui-ktx:$navigationUI"
+            ui      : "androidx.navigation:navigation-ui-ktx:$navigationUI"
     ]
+
+    //Glide
+    glideVersion = "4.13.2"
+    kaptGlideVersion = "4.13.2"
+    glideDepency = "com.github.bumptech.glide:glide:$glideVersion"
+    glideKaptDepency = "com.github.bumptech.glide:compiler:$kaptGlideVersion"
+
+    //Moshi
+    moshiVersion = "1.13.0"
+    kaptMoshiVersion = "1.13.0"
+    moshiDepency = [
+            moshi      : "com.squareup.moshi:moshi:$moshiVersion",
+            moshiKotlin: "com.squareup.moshi:moshi-kotlin:$moshiVersion"
+    ]
+    kaptMoshiDepency = "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
+
+    //Retrofit
+    retrofitVersion = '2.9.0'
+    retrofitDepency = [
+            retrofit      : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            converterMoshi: "com.squareup.retrofit2:converter-moshi:$retrofitVersion",
+    ]
+
+    //Dagger 2
+    daggerVersion = "2.41"
+    daggerDepency  = "com.google.dagger:dagger:$daggerVersion"
+    kaptDagger = "com.google.dagger:dagger-compiler:$daggerVersion"
+
 
 }

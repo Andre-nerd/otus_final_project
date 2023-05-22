@@ -38,48 +38,33 @@ dependencies {
 
 
     implementation androidxDepency.values()
-
     implementation androidMaterialDepency
 
+    //ViewModel & Fragment
     implementation viewModelFragmentDepency.values()
-
+    //LiveData
     implementation liveDataDepency.values()
-
+    //RecyclerView
+    implementation recyclerviewDepency
+    //Navigation
     implementation navigationDepency.values()
+    //Glide
+    implementation glideDepency
+    kapt glideKaptDepency
+    //Moshi
+    implementation moshiDepency.values()
+    kapt kaptMoshiDepency
+    //Retrofit
+    implementation retrofitDepency.values()
+    //OkHttp Interceptor
+    implementation "com.squareup.okhttp3:logging-interceptor:4.8.0"
+    //Dagger 2
+    implementation daggerDepency
+    kapt kaptDagger
 
     implementation project(":core")
     implementation project(':api-database')
     implementation project(path: ':navigation')
-
-
-    //LiveData
-
-
-    //Glide
-    implementation 'com.github.bumptech.glide:glide:4.13.2'
-    kapt "com.github.bumptech.glide:compiler:4.13.2"
-
-//    //RecyclerView
-    implementation 'androidx.recyclerview:recyclerview:1.2.1'
-
-
-    //Moshi
-    def moshiVersion = '1.13.0'
-    implementation "com.squareup.moshi:moshi:$moshiVersion"
-    implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
-    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
-
-    //Retrofit
-    def retrofitVersion = '2.9.0'
-    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
-    implementation "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
-
-    implementation "com.squareup.okhttp3:logging-interceptor:4.8.0"
-
-    //Dagger 2
-    def daggerVersion = '2.41'
-    implementation "com.google.dagger:dagger:$daggerVersion"
-    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
 
 
     //Junit
