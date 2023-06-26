@@ -81,6 +81,4 @@ ext {
     daggerVersion = "2.41"
     daggerDepency  = "com.google.dagger:dagger:$daggerVersion"
     kaptDagger = "com.google.dagger:dagger-compiler:$daggerVersion"
-
-
 }
