@@ -18,6 +18,5 @@ fun mainScreenService(): MainScreenService {
         .addConverterFactory(MoshiConverterFactory.create())
         .client(okHttpClient)
         .build()
-
     return retrofit.create(MainScreenService::class.java)
 }

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
         minSdk 29
-        targetSdk 31
+        targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -39,6 +39,7 @@ dependencies {
     //Navigation
     implementation navigationDepency.values()
     //Yandex Map Kit
-    implementation 'com.yandex.android:maps.mobile:4.0.0-lite'
+//    implementation 'com.yandex.android:maps.mobile:4.0.0-lite'
+    implementation group: 'com.yandex.android', name: 'maps.mobile', version: '4.3.2-lite'
 
 }

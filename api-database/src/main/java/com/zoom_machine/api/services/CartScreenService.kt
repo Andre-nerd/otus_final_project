@@ -19,6 +19,5 @@ fun cartScreenService(): CartScreenService {
         .addConverterFactory(MoshiConverterFactory.create())
         .client(okHttpClient)
         .build()
-
     return retrofit.create(CartScreenService::class.java)
 }

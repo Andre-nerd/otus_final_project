@@ -36,7 +36,6 @@ internal class MainScreenViewModel(
     private val mutableStatusFilter = MutableLiveData<Boolean>(false)
     val statusFilter: LiveData<Boolean>
         get() = mutableStatusFilter
-
     val throwableMessage = SingleLiveEvent<MessageViewModel>()
     val showProgressBar = SingleLiveEvent<Boolean>()
     private var isDataInSharedPref = false

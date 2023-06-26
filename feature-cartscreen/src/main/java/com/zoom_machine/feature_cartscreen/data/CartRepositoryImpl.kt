@@ -15,19 +15,15 @@ class CartRepositoryImpl @Inject constructor(
     override suspend fun getPurchases(): BasketResponse {
         return cartScreenService.getContentForCartScreen()
     }
-
     override suspend fun getCart(): Cart {
         return cartScreenDao.getCart()
     }
-
     override suspend fun saveCart(item: Cart) {
         cartScreenDao.insertNewCart(item)
     }
-
     override suspend fun getBasket(id_cart: String): List<Basket> {
         return cartScreenDao.getBasketList(id_cart)
     }
-
     override suspend fun saveBasket(items: List<Basket>) {
         items.forEach {
             cartScreenDao.insertNewBasket(it)

@@ -184,7 +184,6 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             else -> {}
         }
     }
-
     private fun showToast() {
         Toast.makeText(requireContext(), "Click", Toast.LENGTH_SHORT).show()
     }

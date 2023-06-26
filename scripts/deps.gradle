@@ -1,5 +1,9 @@
 ext {
 
+    compileSdkVersion = 33
+    minSdkVersion  = 29
+    targetSdkVersion = 33
+
     androidxCore = "1.8.0"
     androidxAppcompat = "1.4.2"
     androidxConstraintlayout = "2.1.4"

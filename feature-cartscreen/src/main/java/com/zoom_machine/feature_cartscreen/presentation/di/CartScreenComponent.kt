@@ -43,7 +43,6 @@ interface CartScreenDeps {
     val sharedPrefCartScreen: SharedPrefCartScreen
 }
 
-
 interface CartScreenProvider {
     @get:RestrictTo(RestrictTo.Scope.LIBRARY)
     val deps: CartScreenDeps

@@ -17,6 +17,5 @@ fun detailsScreenService(): DetailsScreenService {
         .addConverterFactory(MoshiConverterFactory.create())
         .client(okHttpClient)
         .build()
-
     return retrofit.create(DetailsScreenService::class.java)
 }
