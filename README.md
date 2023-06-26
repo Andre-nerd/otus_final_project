@@ -1,6 +1,6 @@
 # ecommerce app screen
 Multi-module project. Dagger2 Dependency Injection, RoomDao, Firebase, Notifications, 
-MVVM, LiveData, Retrofit, Custom View, Yandex MapKit 
+MVVM, LiveData, Retrofit, Custom View, Yandex MapKit, Coroutines API
 
 
 
