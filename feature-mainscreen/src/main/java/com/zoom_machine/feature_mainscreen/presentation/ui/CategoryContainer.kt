@@ -17,7 +17,7 @@ class CategoryContainer @JvmOverloads constructor(
     private val category: TextView
     private val rightMenu: TextView
 
-    val isCategoryPressed = SingleLiveEvent<Boolean>()
+    private val isCategoryPressed = SingleLiveEvent<Boolean>()
     val isRightMenuPressed = SingleLiveEvent<Boolean>()
     private val isCategoryFlowMutable = MutableStateFlow(false)
 
